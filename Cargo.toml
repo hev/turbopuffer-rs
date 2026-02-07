@@ -1,0 +1,17 @@
+[package]
+name = "turbopuffer-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A client library for the turbopuffer vector database (forked from ragkit/turbopuffer-client with per-vector delete support)"
+license = "MIT"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["gzip", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+tracing = "0.1"
+
+[dev-dependencies]
+dotenv = "0.15"
+tokio = { version = "1", features = ["full"] }
